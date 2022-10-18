@@ -15,10 +15,10 @@ int (*get_op(const char c))(va_list)
 	flags_p fp[] = {
 		{"c", print_char},
 		{"s", print_str},
-		/**
-		*{"i", print_nbr},
-		*{"d", print_nbr},
-		*{"b", print_binary},
+		
+		{"i", print_nbr},
+		{"d", print_nbr},
+		/*{"b", print_binary},
 		*{"o", print_octal},
 		*{"x", print_hexa_lower},
 		*{"X", print_hexa_upper},
