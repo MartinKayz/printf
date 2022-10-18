@@ -34,7 +34,7 @@ char *convert_base_pointer(unsigned long p);
  */   
 typedef struct flags_printf
 {
-		char *c;
-			int (*f)(va_list);
+	char *c;
+	int (*f)(va_list);
 } flags_p;
 #endif

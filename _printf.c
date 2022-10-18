@@ -15,10 +15,19 @@ int (*get_op(const char c))(va_list)
 	flags_p fp[] = {
 		{"c", print_char},
 		{"s", print_str},
+<<<<<<< HEAD
 		
 		{"i", print_nbr},
 		{"d", print_nbr},
 		/*{"b", print_binary},
+=======
+		{"R", print_rot13},
+
+		/**
+		*{"i", print_nbr},
+		*{"d", print_nbr},
+		*{"b", print_binary},
+>>>>>>> 5162fcc5235e74a90fd7156b9de5c4d96eb9cfd6
 		*{"o", print_octal},
 		*{"x", print_hexa_lower},
 		*{"X", print_hexa_upper},
@@ -26,7 +35,6 @@ int (*get_op(const char c))(va_list)
 		*{"S", print_str_unprintable},
 		*{"r", print_str_reverse},
 		*{"p", print_ptr},
-		*{"R", print_rot13},
 		*/
 		{"%", print_percent}
 	};
