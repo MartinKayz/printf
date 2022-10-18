@@ -17,20 +17,15 @@ int (*get_op(const char c))(va_list)
 		{"s", print_str},
 		{"i", print_nbr},
 		{"d", print_nbr},
-		/**
-		*{"b", print_binary},
-		*{"R", print_rot13},
-		*{"i", print_nbr},
-		*{"d", print_nbr},
-		*{"b", print_binary},
-		*{"o", print_octal},
-		*{"x", print_hexa_lower},
-		*{"X", print_hexa_upper},
-		*{"u", print_unsigned},
-		*{"S", print_str_unprintable},
-		*{"r", print_str_reverse},
-		*{"p", print_ptr},
-		*/
+		{"b", print_binary},
+		{"o", print_octal},
+		{"x", print_hexa_lower},
+		{"X", print_hexa_upper},
+		{"u", print_unsigned},
+		{"S", print_str_unprintable},
+		{"r", print_str_reverse},
+		{"p", print_ptr},
+		{"R", print_rot13},
 		{"%", print_percent}
 	};
 	while (i < 14)
